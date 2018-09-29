@@ -2,9 +2,12 @@ cordova create cordovaExample com.example.cordova CordovaExample
 
 cordova platform add ios
 cordova platform add android
+cordova platform add browser
 
 export PATH=/home/kevingates/Software/android-sdk/tools:/home/kevingates/Software/android-sdk/tools/bin:$PATH
 
 export PATH=/home/kevingates/Software/android-sdk/platform-tools:$PATH
 
 sdkmanager "platforms;android-27"
+
+cordova run browser -- --port=9005 --target=Firefox
